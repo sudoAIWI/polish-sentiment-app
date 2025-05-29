@@ -41,3 +41,8 @@ torch = { index = "pytorch" }
 name = "pytorch"
 url = "https://download.pytorch.org/whl/cpu"
 explicit = true
+
+[tool.poetry.group.deployment.dependencies]
+onnxruntime = "^1.16.0"  # Lightweight inference runtime
+torch = { version = "^2.1.0", optional = true }  # Only needed for export
+transformers = { version = "^4.35.0", optional = true }
