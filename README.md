@@ -1,0 +1,1 @@
+# polish-sentiment-app
